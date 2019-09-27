@@ -1,4 +1,4 @@
-package fr.diginamic.immobilier;
+package fr.diginamic.maison;
 
 /** Pièce de type salon
  * @author DIGINAMIC

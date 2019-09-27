@@ -1,22 +1,22 @@
-package fr.diginamic.immobilier;
+package fr.diginamic.maison;
 
-/** Pièce de type WC
+/** Pièce de type cuisine
  * @author DIGINAMIC
  *
  */
-public class WC extends Piece {
+public class Cuisine extends Piece {
 
 	/** Constructeur
 	 * @param etage étage
 	 * @param superficie superficie
 	 */
-	public WC(int etage, double superficie) {
+	public Cuisine(int etage, double superficie) {
 		super(etage, superficie);
 	}
 	
 	@Override
 	public String getType() {
-		return TYPE_WC;
+		return TYPE_CUISINE;
 	}
 
 }

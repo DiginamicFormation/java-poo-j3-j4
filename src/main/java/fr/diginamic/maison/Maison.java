@@ -1,4 +1,4 @@
-package fr.diginamic.immobilier;
+package fr.diginamic.maison;
 
 /** Représente une maison avec toutes ses pièces
  * @author DIGINAMIC

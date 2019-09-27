@@ -1,12 +1,12 @@
 package fr.diginamic.essais;
 
-import fr.diginamic.immobilier.Chambre;
-import fr.diginamic.immobilier.Cuisine;
-import fr.diginamic.immobilier.Maison;
-import fr.diginamic.immobilier.Piece;
-import fr.diginamic.immobilier.SalleDeBain;
-import fr.diginamic.immobilier.Salon;
-import fr.diginamic.immobilier.WC;
+import fr.diginamic.maison.Chambre;
+import fr.diginamic.maison.Cuisine;
+import fr.diginamic.maison.Maison;
+import fr.diginamic.maison.Piece;
+import fr.diginamic.maison.SalleDeBain;
+import fr.diginamic.maison.Salon;
+import fr.diginamic.maison.WC;
 
 /** Test de la classe AffichageForme avec 3 formes différentes
  * @author DIGINAMIC
