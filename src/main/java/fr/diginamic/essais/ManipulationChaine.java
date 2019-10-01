@@ -1,5 +1,7 @@
 package fr.diginamic.essais;
 
+import entites.Salarie;
+
 /** Tests autour de la manipulation d'une chaine de caractères
  * @author DIGINAMIC
  *
@@ -10,7 +12,7 @@ public class ManipulationChaine {
 	 * @param args arguments
 	 */
 	public static void main(String[] args) {
-		String chaine = "Durand;Marcel;012543;23.5";
+		String chaine = "Durand;Marcel;2 523.5";
 
 		// Dans une chaine de caractères, chaque caractères à un index, comme
 		// dans un tableau.
@@ -45,6 +47,17 @@ public class ManipulationChaine {
 		for (int i = 0; i < morceaux.length; i++) {
 			System.out.println("Morceaux n°" + i + " : " + morceaux[i]);
 		}
+		
+		
+		// Traitement de la chaine de caractères contenant le salaire 
+		String chaineTraitee = morceaux[2].replace(" ", "");
+		
+		// Transformation en double de la chaine précédente
+		double salaire = Double.parseDouble(chaineTraitee);
+		
+		// Création de l'instance de Salarie
+		Salarie salarie = new Salarie(morceaux[0], morceaux[1], salaire);
+		System.out.println(salarie);
 	}
 
 }
