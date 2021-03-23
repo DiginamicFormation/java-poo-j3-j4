@@ -22,11 +22,6 @@ public class Maison {
 	 */
 	public void ajouterPiece(Piece nvPiece) {
 		
-		if (nvPiece==null || nvPiece.getNumEtage()<0 || nvPiece.getSuperficie()<0){
-			System.out.println("Votre pièce est incorrecte");
-			return;
-		}
-		
 		// On est obligé d'agrandir le tableau initial de 1 à chaque ajout
 		// d'une nouvelle pièce
 		
