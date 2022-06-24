@@ -30,7 +30,7 @@ public class GameService {
 	}
 
 	/**
-	 * Creates a new character. Restarts the previous game stats.
+	 * Crée une nouvelle partie avec un nouveau héros
 	 * 
 	 */
 	public void createGame(Scanner scanner) {
@@ -50,7 +50,7 @@ public class GameService {
 	}
 
 	/**
-	 * 
+	 * Si le héros est vivant, cette méthode permet de combattre une créature générée aléatoirement
 	 */
 	public void fightACreature() {
 		

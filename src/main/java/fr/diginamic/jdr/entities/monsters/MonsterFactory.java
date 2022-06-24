@@ -3,13 +3,13 @@ package fr.diginamic.jdr.entities.monsters;
 import java.util.Random;
 
 /** Classe de type "factory" dans le rôle est de créer une créature sur demande
- * @author RichardBONNAMY
+ * @author DIGINAMIC
  *
  */
 public class MonsterFactory {
 
-	/** Returns a random generated creature
-	 * @return
+	/** Retourne une créature générée aléatoirement
+	 * @return Monster
 	 */
 	public static Monster generate() {
 		Random random = new Random();
@@ -18,9 +18,11 @@ public class MonsterFactory {
 		Monster monster = null;
 		if (creatureRandom == 0) {
 			monster = new Goblin();
-		} else if (creatureRandom == 1) {
+		} 
+		else if (creatureRandom == 1) {
 			monster = new Troll();
-		} else if (creatureRandom == 2) {
+		}
+		else if (creatureRandom == 2) {
 			monster = new Wolf();
 		}
 		return monster;

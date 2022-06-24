@@ -1,6 +1,6 @@
-package fr.diginamic.essais;
+package fr.diginamic.chaines;
 
-import entites.Salarie;
+import fr.diginamic.entites.Salarie;
 
 /** Tests autour de la manipulation d'une chaine de caractères
  * @author DIGINAMIC
@@ -47,7 +47,6 @@ public class ManipulationChaine {
 		for (int i = 0; i < morceaux.length; i++) {
 			System.out.println("Morceaux n°" + i + " : " + morceaux[i]);
 		}
-		
 		
 		// Traitement de la chaine de caractères contenant le salaire 
 		String chaineTraitee = morceaux[2].replace(" ", "");

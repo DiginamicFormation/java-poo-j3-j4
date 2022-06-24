@@ -7,7 +7,7 @@ import fr.diginamic.parseur.membres.MembreFactory;
 import fr.diginamic.parseur.operateurs.Operateur;
 import fr.diginamic.parseur.operateurs.OperateurFactory;
 
-/**
+/** Parseur mathématique simple.
  * @author DIGINAMIC
  *
  */

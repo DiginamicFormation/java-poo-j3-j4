@@ -1,7 +1,7 @@
 package fr.diginamic.essais;
 
-import entites.Cercle;
-import utils.CercleFactory;
+import fr.diginamic.entites.Cercle;
+import fr.diginamic.utils.CercleFactory;
 
 /** Test des classes Cercle et CercleFactory
  * @author DIGINAMIC
@@ -21,7 +21,7 @@ public class TestCercle {
 		System.out.println("Perimètre: " + cercle2.perimetre());
 		System.out.println("Surface: " + cercle2.surface());
 
-		Cercle cercle3 = CercleFactory.creerCercle(4.5);
+		Cercle cercle3 = CercleFactory.getInstance(4.5);
 		System.out.println("Perimètre: " + cercle3.perimetre());
 		System.out.println("Surface: " + cercle3.surface());
 

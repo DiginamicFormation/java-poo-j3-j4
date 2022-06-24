@@ -46,25 +46,25 @@ public class Game {
 		while (monster.isAlive() && hero.isAlive()) {
 			
 			// calcule de l'attaque du personnage et de la créature
-			double characterAttack = hero.getAttackValue();
-			double creatureAttack = monster.getAttackValue();
+			double heroAtt = hero.getAttackValue();
+			double monsterAtt = monster.getAttackValue();
 			
-			// si character plus rapide
-			if (characterAttack > creatureAttack) {
-				double damages = characterAttack - creatureAttack;
+			// Si héros plus rapide
+			if (heroAtt > monsterAtt) {
+				double damages = heroAtt - monsterAtt;
 				System.out.println(hero.getName() + " est plus rapide. Il inflige " + damages + " à "
 						+ monster.getName());
 				monster.setLife(monster.getLife() - damages);
 				System.out.println("Il lui reste " + monster.getLife() + " PV.");
-				// si creature plus rapide
 			} 
-			else if (characterAttack == creatureAttack) {
+			else if (heroAtt == monsterAtt) {
 				System.out.println("La créature évite votre coups.");
 				continue;
 				// si égalité de vitesse
 			} 
+			// si monstre plus rapide
 			else {
-				double damages = creatureAttack - characterAttack;
+				double damages = monsterAtt - heroAtt;
 				System.out.println(monster.getName() + " est plus rapide. Il inflige " + damages + " à "
 						+ hero.getName());
 				hero.setLife(hero.getLife() - damages);

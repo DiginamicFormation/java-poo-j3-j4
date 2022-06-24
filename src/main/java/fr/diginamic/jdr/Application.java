@@ -7,8 +7,8 @@ import fr.diginamic.jdr.services.GameService;
 /**
  * Main class of the game.
  * 
- * @author Jean-Baptiste
- * @version 1.0 ALPHA
+ * @author DIGINAMIC
+ * @version 1.0
  */
 public class Application {
 

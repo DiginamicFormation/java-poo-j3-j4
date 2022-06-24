@@ -1,4 +1,4 @@
-package entites;
+package fr.diginamic.entites;
 
 /** Représente un salarié
  * @author DIGINAMIC
