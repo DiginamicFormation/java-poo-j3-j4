@@ -14,8 +14,8 @@ public class Game {
 	/** turns : int*/
 	private int numTurn;
 	
-	/** isRunning : boolean*/
-	private boolean isRunning = true;
+	/** running : boolean*/
+	private boolean running;
 	
 	/** hero : le héros */
 	private Hero hero;
@@ -25,6 +25,7 @@ public class Game {
 	 */
 	public Game(Hero hero) {
 		this.hero = hero;
+		this.running = true;
 	}
 
 	/** Retourne si oui ou non le héros est en vie
@@ -89,15 +90,15 @@ public class Game {
 	 * @return the isRunning
 	 */
 	public boolean isRunning() {
-		return isRunning;
+		return running;
 	}
 
 	/**
-	 * @param isRunning
-	 *            the isRunning to set
+	 * @param running
+	 *            the running to set
 	 */
-	public void setRunning(boolean isRunning) {
-		this.isRunning = isRunning;
+	public void setRunning(boolean running) {
+		this.running = running;
 	}
 
 	/**
