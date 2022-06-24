@@ -1,4 +1,4 @@
-package fr.diginamic.jdr.creatures;
+package fr.diginamic.jdr.entities;
 
 import java.util.Random;
 
@@ -6,18 +6,16 @@ import java.util.Random;
  * @author Jean-Baptiste
  *
  */
-public class Character extends Creature {
+public class Hero extends Creature {
 
 	private int score;
 
 	/**
 	 * Constructor
 	 * 
-	 * @param life
-	 * @param strength
-	 * @param name
+	 * @param name nom de la créature
 	 */
-	public Character(String name) {
+	public Hero(String name) {
 		this.name = name;
 		Random random = new Random();
 		this.strength = 12 + random.nextInt(7); // 12 à 18 inclus
