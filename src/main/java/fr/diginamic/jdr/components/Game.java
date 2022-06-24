@@ -11,8 +11,8 @@ import fr.diginamic.jdr.entities.monsters.Monster;
  */
 public class Game {
 
-	/** amountOfTurns : int*/
-	private int amountOfTurns;
+	/** turns : int*/
+	private int numTurn;
 	
 	/** isRunning : boolean*/
 	private boolean isRunning = true;
@@ -35,14 +35,14 @@ public class Game {
 	}
 
 	/**
-	 * Un combat complet (jusqu'à la mort de la créature ou du character)
+	 * Un combat complet (jusqu'à la mort du monstre ou du héros)
 	 */
 	public void fight(Monster monster) {
 		
 		System.out.println("Vous affrontez un " + monster.getName() + ", avec force = " + monster.getStrength()
 				+ ", vie = " + monster.getLife());
 		
-		// BOUCLE TANT QUE LA CREATURE ET LE CHARACTER SONT VIVANTS
+		// BOUCLE TANT QUE LE MONSTRE ET LE HEROS SONT VIVANTS
 		while (monster.isAlive() && hero.isAlive()) {
 			
 			// calcule de l'attaque du personnage et de la créature
@@ -84,21 +84,6 @@ public class Game {
 			}
 		}
 	}
-	
-	/**
-	 * @return the amountOfTurns
-	 */
-	public int getAmountOfTurns() {
-		return amountOfTurns;
-	}
-
-	/**
-	 * @param amountOfTurns
-	 *            the amountOfTurns to set
-	 */
-	public void setAmountOfTurns(int amountOfTurns) {
-		this.amountOfTurns = amountOfTurns;
-	}
 
 	/**
 	 * @return the isRunning
@@ -120,6 +105,20 @@ public class Game {
 	 */
 	public Hero getHero() {
 		return hero;
+	}
+
+	/** Getter
+	 * @return the numTurn
+	 */
+	public int getNumTurn() {
+		return numTurn;
+	}
+
+	/** Setter
+	 * @param numTurn the numTurn to set
+	 */
+	public void setNumTurn(int numTurn) {
+		this.numTurn = numTurn;
 	}
 
 }

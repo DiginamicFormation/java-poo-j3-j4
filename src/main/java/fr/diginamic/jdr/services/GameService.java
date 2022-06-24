@@ -55,8 +55,8 @@ public class GameService {
 	public void fightACreature() {
 		
 		if (game.isHeroAlive()) {
-			game.setAmountOfTurns(game.getAmountOfTurns() + 1);
-			System.out.println("***** TOUR DE JEU N°" + game.getAmountOfTurns() + " *****");
+			game.setNumTurn(game.getNumTurn()+1);
+			System.out.println("***** TOUR DE JEU N°" + game.getNumTurn() + " *****");
 			
 			Monster creature = MonsterFactory.generate();
 			game.fight(creature);
